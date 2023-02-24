@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import styles from 'styles/NavBar.module.css';
+import styles from 'styles/Navbar.module.css';
 
-const NavBar = () => {
+const Navbar = () => {
   const links = [
     { path: '/', text: 'Books' },
     { path: 'category', text: 'Category' },
@@ -20,4 +20,4 @@ const NavBar = () => {
     </nav>
   );
 };
-export default NavBar;
+export default Navbar;
