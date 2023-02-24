@@ -10,6 +10,7 @@ const Books = () => (
       <Book title="Book 3" author="Mr Protocoll" />
       <Book title="Book 4" author="Mr Protocoll" />
     </ul>
+    <h2>Form</h2>
     <Form />
   </>
 );
