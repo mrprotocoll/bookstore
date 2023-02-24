@@ -1,16 +1,17 @@
+import Book from 'components/Book';
+import Form from 'components/Form';
+
 const Books = () => (
   <>
     <h2>Books</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero molestias
-      velit exercitationem iusto ex atque ratione asperiores necessitatibus temporibus.
-      Velit earum pariatur nam saepe sit sunt nesciunt culpa aspernatur quo?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-      doloribus rerum est temporibus odit repudiandae hic quibusdam commodi
-      quod sunt fugit, aut fuga. Saepe tempora ex, consequuntur nesciunt ratione placeat?
-    </p>
+    <ul>
+      <Book title="Hello World" author="Mr Protocoll" />
+      <Book title="Book 2" author="Mr Protocoll" />
+      <Book title="Book 3" author="Mr Protocoll" />
+      <Book title="Book 4" author="Mr Protocoll" />
+    </ul>
+    <Form />
   </>
 );
+
 export default Books;

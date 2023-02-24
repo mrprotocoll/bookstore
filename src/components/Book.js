@@ -3,10 +3,16 @@ import { PropTypes } from 'prop-types';
 const Book = ({ title, author }) => (
   <li>
     <div>
-        <p>{title}</p>
-        <span>{author}</span>
+      <p>
+        Title:
+        {title}
+      </p>
+      <small>
+        Author:
+        {author}
+      </small>
     </div>
-    <button type='button'>Remove</button>
+    <button type="button">Remove</button>
   </li>
 );
 
