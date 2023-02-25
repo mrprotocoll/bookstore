@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+}
+
+.navlinks li {
+  padding: 10px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: rgb(11, 12, 100);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navlinks a:hover {
+  color: rgb(44, 124, 161);
+}
