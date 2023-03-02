@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 
-const Book = ({ title, author }) => (
+const Book = ({ id, title, author }) => (
   <li>
     <div>
       <p>
@@ -17,6 +17,7 @@ const Book = ({ title, author }) => (
 );
 
 Book.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };
