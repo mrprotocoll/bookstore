@@ -22,17 +22,17 @@ const Form = () => {
       );
 
       // reset title and author
-      setTitle("");
-      setAuthor("");
+      setTitle('');
+      setAuthor('');
       setErrorMessage('');
-    }else{
+    } else {
       setErrorMessage('Book title and author are required');
     }
   };
   return (
     <form>
-      <input type="text" onChange={(e) => setTitle(e.target.value)} placeholder="Enter title" />
-      <input type="text" onChange={(e) => setAuthor(e.target.value)} placeholder="Enter author name" />
+      <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title" />
+      <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Enter author name" />
       <button
         type="submit"
         aria-label="Add todo item"
