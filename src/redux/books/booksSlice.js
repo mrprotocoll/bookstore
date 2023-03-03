@@ -1,18 +1,18 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const APIKEY = "DZhozfmIef5jvfNuBg7r"
+const APIKEY = 'DZhozfmIef5jvfNuBg7r';
 const URL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${APIKEY}/books`;
 
-export const getBooks = createAsyncThunk("book/getBooks", async (_, thunkAPI) => {
+export const getBooks = createAsyncThunk('book/getBooks', async (_, thunkAPI) => {
   try {
-    return fetch(URL).then(res => res.json())
+    return fetch(URL).then((res) => res.json());
   } catch (error) {
-    return thunkAPI.rejectWithValue("Oops something went wrong")
+    return thunkAPI.rejectWithValue('Oops something went wrong');
   }
-})
+});
 const initialState = {
   books: [],
-  error: false
+  error: false,
 };
 
 const booksSlice = createSlice({
@@ -28,13 +28,13 @@ const booksSlice = createSlice({
   },
   extraReducers: {
     [getBooks.fulfilled]: (state, action) => {
-      state.books = action.payload;
-      console.log(action)
+      state.books = action.payload.item1;
+      console.log(action);
     },
     [getBooks.rejected]: (state) => {
       state.error = true;
-    }
-  }
+    },
+  },
 });
 
 export const { addBook, removeBook } = booksSlice.actions;

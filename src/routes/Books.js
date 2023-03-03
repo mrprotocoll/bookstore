@@ -1,9 +1,17 @@
 import Book from 'components/Book';
 import Form from 'components/Form';
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getBooks } from 'redux/books/booksSlice';
 
 const Books = () => {
   const { books } = useSelector((store) => store.book);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+
   return (
     <>
       <h2>Books</h2>
