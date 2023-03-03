@@ -1,9 +1,16 @@
+:root {
+  --primary: #0290ff;
+  --white: #fff;
+}
+
 body {
-  background-color: #fff;
-  margin: 0 auto;
+  background-color: #fafafa;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   height: 100vh;
   box-sizing: border-box;
-  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+  font-family: 'Montserrat', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
 }
 
 ul {
@@ -16,20 +23,55 @@ p {
   color: rgb(59, 59, 59);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgb(59, 59, 59);
+.container {
+  box-sizing: border-box;
+  max-width: 1067px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 967px;
-  height: 100vh;
-  padding: 0 20px;
+.btn {
+  border-radius: 3px;
+  background-color: var(--primary);
+  color: #fff;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  border: 0;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+input {
+  font-family: Montserrat, sans-serif;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 var(--black-5);
+  border: 1px solid #e8e8e8;
+  height: 1.5rem;
+}
+
+input::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.CircularProgressbar-path {
+  stroke: #379cf6;
+}
+
+.CircularProgressbar-trail {
+  stroke: #e8e8e8;
+}
+
+.CircularProgressbar-text {
+  fill: #379cf6;
+}
+
+.CircularProgressbar-background {
+  fill: #fff;
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from 'redux/books/BooksThunk';
 import { v4 as uuidv4 } from 'uuid';
+import styles from 'styles/Form.module.css';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -31,19 +32,24 @@ const Form = () => {
   };
 
   return (
-    <form>
-      <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title" />
-      <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Enter author name" />
-      <button
-        type="submit"
-        aria-label="Add todo item"
-        className="pointer"
-        onClick={handleSubmit}
-      >
-        submit
-      </button>
+    <div className={`container ${styles.form}`}>
+      <hr />
+      <h2>ADD NEW BOOK</h2>
+      <form>
+        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title" />
+        <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Enter author name" />
+        <button
+          type="submit"
+          aria-label="Add todo item"
+          className="btn"
+          onClick={handleSubmit}
+        >
+          ADD BOOK
+        </button>
+      </form>
       <span className="error">{errorMessage}</span>
-    </form>
+    </div>
+
   );
 };
 

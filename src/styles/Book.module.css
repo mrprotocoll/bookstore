@@ -1,0 +1,108 @@
+.book {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 18px;
+  font-family: Roboto Slab, sans-serif;
+}
+
+.book .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  font-family: Montserrat, sans-serif !important;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #121212;
+  opacity: 0.7;
+  text-transform: capitalize;
+}
+
+.book h2 {
+  font-size: 1.575rem;
+  color: #121212;
+  margin: 10px 0 2px 0;
+  letter-spacing: -0.2px;
+  text-transform: capitalize;
+}
+
+.author {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  text-transform: capitalize;
+}
+
+.action {
+  margin-top: 20px;
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+}
+
+.action button {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  text-transform: capitalize;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.action button:nth-child(2) {
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  padding: 5px 15px;
+}
+
+.book .progress {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+}
+
+.chapter {
+  padding-left: 2rem;
+}
+
+.chapter h3 {
+  font-family: Roboto Slab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+  opacity: 0.5;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.chapter p {
+  font-family: Roboto Slab, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #121212;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 756px) {
+  .book {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    margin-bottom: 18px;
+    font-family: Roboto Slab, sans-serif;
+  }
+
+  .book .progress {
+    margin-top: 30px;
+  }
+}

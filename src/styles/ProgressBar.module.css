@@ -1,0 +1,29 @@
+.progress {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #e8e8e8;
+  padding-right: 10px;
+}
+
+.progress .chart {
+  width: 70px;
+  height: 70px;
+  padding-right: 20px;
+}
+
+.progress .progressValue h3 {
+  margin: 0;
+  color: #121212;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.progress .progressValue p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #121212;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  margin-top: 3px;
+}

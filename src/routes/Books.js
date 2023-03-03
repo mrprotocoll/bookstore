@@ -15,8 +15,7 @@ const Books = () => {
 
   return (
     <>
-      <h2>Books</h2>
-      <ul>
+      <ul className="container">
         {
           bookItems.map((item) => {
             const book = books[item][0];
@@ -31,7 +30,7 @@ const Books = () => {
           })
         }
       </ul>
-      <h2>Form</h2>
+
       <Form />
     </>
   );
