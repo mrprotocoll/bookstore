@@ -5,6 +5,8 @@ import './index.css';
 import App from 'components/App';
 import { Provider } from 'react-redux';
 import store from 'redux/store';
+import '@fontsource/montserrat';
+import '@fontsource/roboto-slab';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

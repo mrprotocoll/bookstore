@@ -1,0 +1,31 @@
+.form {
+    padding-top: 2rem;
+    padding-bottom: 16rem;
+}
+.form hr{
+    border: 1px solid #e8e8e8;
+}
+
+.form h2 {
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.18px;
+    color: #888;
+    margin: 20px 0px;
+}
+
+.form form {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr 0.5fr;
+    column-gap: 30px;
+}
+
+.form button {
+    font-family: Roboto Slab;
+    font-size: 0.813rem;
+    font-weight: bold;
+}

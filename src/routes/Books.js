@@ -30,7 +30,7 @@ const Books = () => {
           })
         }
       </ul>
-      <h2>Form</h2>
+
       <Form />
     </>
   );
