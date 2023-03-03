@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from 'redux/books/booksSlice';
+import { addBook } from 'redux/books/BooksThunk';
 import { v4 as uuidv4 } from 'uuid';
 
 const Form = () => {
@@ -17,7 +17,7 @@ const Form = () => {
           item_id: uuidv4(),
           title,
           author,
-          category: '',
+          category: 'devOps',
         }),
       );
 
@@ -29,6 +29,7 @@ const Form = () => {
       setErrorMessage('Book title and author are required');
     }
   };
+
   return (
     <form>
       <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title" />
