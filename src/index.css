@@ -23,9 +23,36 @@ p {
 
 .container {
   box-sizing: border-box;
-  max-width: 967px;
+  max-width: 1067px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 3px;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 300;
+  border: 0;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.CircularProgressbar-path {
+  stroke: #379cf6;
+}
+
+.CircularProgressbar-trail {
+  stroke: #e8e8e8;
+}
+
+.CircularProgressbar-text {
+  fill: #379cf6;
+}
+
+.CircularProgressbar-background {
+  fill: #ffffff;
 }

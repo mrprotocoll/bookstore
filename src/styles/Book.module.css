@@ -1,0 +1,92 @@
+.book {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 18px;
+    font-family: RobotoSlab;
+}
+
+.book .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #666666;
+    text-transform: capitalize;
+}
+
+.book h2 {
+    margin: 0;
+    font-size: 1.575rem;
+    color: #121212;
+    margin: 10px 0 2px 0;
+    letter-spacing: -0.2px;
+    text-transform: capitalize;
+}
+
+.author {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #4386bf;
+    text-transform: capitalize;
+}
+
+.action {
+    margin-top: 20px;
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+}
+
+.action button {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #4386bf;
+    text-transform: capitalize;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.action button:nth-child(2) {
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    padding: 5px 15px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+}
+
+.chart {
+    width: 70px;
+    height: 70px;
+    padding-right: 20px;
+}
+
+.progressValue h3{
+    margin: 0;
+    color: #121212;
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+
+.progressValue p{
+    margin: 0;
+    font-size: 0.875rem;
+    color: #666666;
+    font-family: Montserrat;
+    margin-top: 3px;
+}
