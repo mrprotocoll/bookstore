@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav>
       <div className={`container ${styles.navbar}`}>
         <ul className={styles.navlinks}>
-          <li><h2>MP Bookstore</h2></li>
+          <li><h2>Bookstore</h2></li>
           {links.map((link) => (
             <li key={link.text}>
               <NavLink to={link.path}>{link.text}</NavLink>
