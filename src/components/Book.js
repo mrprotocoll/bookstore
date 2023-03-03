@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from 'redux/books/BooksThunk';
 import styles from 'styles/Book.module.css';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import ProgressBar from './ProgressBar';
 
 const Book = ({ id, title, author }) => {
   const dispatch = useDispatch();
@@ -19,18 +19,9 @@ const Book = ({ id, title, author }) => {
           <button type="button">Edit</button>
         </div>
       </div>
-      <div className={styles.progress}>
-        <div className={styles.chart}>
-          <CircularProgressbar value={percentage} />
-        </div>
-        <div className={styles.progressValue}>
-          <h3>
-            {percentage}
-            %
-          </h3>
-          <p>Completed</p>
-        </div>
-      </div>
+
+      <ProgressBar percentage={percentage} />
+
       <div className={styles.chapter}>
         <button type="button" className="btn btn-primary">UPDATE PROGRESS</button>
       </div>

@@ -64,29 +64,3 @@
     border-right: 1px solid #e8e8e8;
     padding: 5px 15px;
 }
-
-.progress {
-    display: flex;
-    align-items: center;
-}
-
-.chart {
-    width: 70px;
-    height: 70px;
-    padding-right: 20px;
-}
-
-.progressValue h3{
-    margin: 0;
-    color: #121212;
-    font-family: Montserrat;
-    font-size: 2rem;
-}
-
-.progressValue p{
-    margin: 0;
-    font-size: 0.875rem;
-    color: #666666;
-    font-family: Montserrat;
-    margin-top: 3px;
-}
