@@ -20,10 +20,14 @@ const Book = ({ id, title, author }) => {
         </div>
       </div>
 
-      <ProgressBar percentage={percentage} />
+      <div className={styles.progress}>
+        <ProgressBar percentage={percentage} />
 
-      <div className={styles.chapter}>
-        <button type="button" className="btn btn-primary">UPDATE PROGRESS</button>
+        <div className={styles.chapter}>
+          <h3>CURRENT CHAPTER</h3>
+          <p>Chapter 17</p>
+          <button type="button" className="btn btn-primary">UPDATE PROGRESS</button>
+        </div>
       </div>
 
     </li>

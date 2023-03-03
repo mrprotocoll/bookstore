@@ -1,6 +1,7 @@
 .progress {
     display: flex;
     align-items: center;
+    border-right: 1px solid #e8e8e8;
 }
 
 .progress  .chart {
@@ -14,12 +15,14 @@
     color: #121212;
     font-family: Montserrat;
     font-size: 2rem;
+    font-weight: normal;
 }
 
 .progress .progressValue p{
     margin: 0;
     font-size: 0.875rem;
-    color: #666666;
+    color: #121212;
+    opacity: 0.5;
     font-family: Montserrat;
     margin-top: 3px;
 }
