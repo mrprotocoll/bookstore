@@ -2,7 +2,7 @@ import Book from 'components/Book';
 import Form from 'components/Form';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getBooks } from 'redux/books/booksSlice';
+import { getBooks } from 'redux/books/BooksThunk';
 
 const Books = () => {
   const { books } = useSelector((store) => store.book);
