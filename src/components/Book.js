@@ -7,6 +7,7 @@ import ProgressBar from './ProgressBar';
 const Book = ({ id, title, author }) => {
   const dispatch = useDispatch();
   const percentage = 86;
+
   return (
     <li className={styles.book}>
       <div className={styles.details}>
@@ -26,7 +27,7 @@ const Book = ({ id, title, author }) => {
         <div className={styles.chapter}>
           <h3>CURRENT CHAPTER</h3>
           <p>Chapter 17</p>
-          <button type="button" className="btn btn-primary">UPDATE PROGRESS</button>
+          <button type="button" className="btn">UPDATE PROGRESS</button>
         </div>
       </div>
 
