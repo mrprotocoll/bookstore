@@ -6,7 +6,6 @@ import { getBooks } from 'redux/books/BooksThunk';
 
 const Books = () => {
   const { books } = useSelector((store) => store.book);
-  const bookItems = Object.keys(books);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -17,17 +16,14 @@ const Books = () => {
     <>
       <ul className="container">
         {
-          bookItems.map((item) => {
-            const book = books[item][0];
-            return (
-              <Book
-                key={item}
-                title={book.title}
-                author={book.author}
-                id={item}
-              />
-            );
-          })
+          Object.entries(books).map(([id, book]) => (
+            <Book
+              key={id}
+              title={book[0].title}
+              author={book[0].author}
+              id={id}
+            />
+          ))
         }
       </ul>
 
